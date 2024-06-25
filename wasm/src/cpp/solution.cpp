@@ -117,5 +117,5 @@ void run(const int total_count, const int counts, const int rounds) {
 
 
 int main() {
-  run(1e6, 1000, 100);
+  run(1e5, 1000, 100);
 }
