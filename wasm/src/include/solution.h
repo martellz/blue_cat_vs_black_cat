@@ -1,6 +1,9 @@
 #ifdef LIBEIGEN3_DEV
 // in ubuntu, just install eigen3 by: sudo apt install libeigen3-dev
 #include<eigen3/Eigen/Core>
+#include "matplotlibcpp.h"
+
+namespace plt = matplotlibcpp;
 #else
 #include <Eigen/Core>
 #endif
@@ -10,6 +13,7 @@
 #define INPUTNUMBER
 #include <cmath>
 #include <iostream>
+#include <vector>
 #include <chrono>
 #include <thread>
 

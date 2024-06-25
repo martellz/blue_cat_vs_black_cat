@@ -6,9 +6,10 @@ project(blackcat_vs_bluecat)
 set(CMAKE_CXX_STANDARD 17)
 
 add_compile_definitions(LIBEIGEN3_DEV)
-add_compile_definitions(MY_DEBUG)
+# add_compile_definitions(MY_DEBUG)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++17")
+# if you want to debug, remove "-O3"
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++17 -O3")
 set(source_dir "${PROJECT_SOURCE_DIR}/src/cpp")
 
 # python
