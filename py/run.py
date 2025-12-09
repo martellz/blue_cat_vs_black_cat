@@ -75,12 +75,12 @@ def run3d():
   # 尽管我想一次性生成所有的结果，但是内存不够qwq
   # 具体每次counts为多少，请跑一下benchmark
   results = []
-  total_counts = 1_000_000
+  total_counts = 100_000
   p = np.linspace(0, 1, 100)  # (100, )
   rounds = 100
 
   # 这一步for循环还可以加速，比如 map-reduce
-  counts = 100
+  counts = 200
   N = total_counts // counts
   for i in tqdm(range(N)):
     pre_results = []
